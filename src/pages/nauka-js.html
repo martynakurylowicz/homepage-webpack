@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Martyn</title>
+  </head>
+
+  <body>
+    <div class="page-navigation">
+      <header class="header">
+        <button
+          class="navigation__hamburger-menu navigation__hamburger-menu--js"
+          aria-label="Otwórz menu"
+        >
+          <img class="hamburger-menu" src="../img/hamburger-menu.png" alt="menu" />
+        </button>
+        <p class="hamburger-menu__button">NOTATNIK WTF</p>
+        <nav class="navigation navigation--js">
+          <p class="navigation__logo">NOTATNIK WTF</p>
+          <a class="navigation__menu" href="index.html">WTF</a>
+          <a class="navigation__menu" href="nauka-html.html">HTML</a>
+          <a class="navigation__menu" href="nauka-css.html">CSS</a>
+          <a class="navigation__menu" href="nauka-js.html">JavaScript</a>
+          <a class="navigation__menu" href="nauka-terminal.html">Terminal</a>
+          <a class="navigation__menu" href="formularz.html">Formularz</a>
+        </nav>
+      </header>
+    </div>
+    <div class="page-background">
+      <main>
+        <header class="header-title">
+          <h1 class="header-title__h1">JS - JavaScript</h1>
+        </header>
+
+        <section class="content">
+          <h2 class="content__h2">Programowanie</h2>
+
+          <article class="notes">
+            <p class="notes__paragraph">
+              Szkolenie obejmuje wersję ECMAScript2015+ czyli ES6+
+            </p>
+
+            <h4 class="notes__h4">Z czego składa się JS:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">Wartości -</li>
+              <li class="notes-list__item">Operacje porównywania</li>
+              <li class="notes-list__item">Literały</li>
+              <li class="notes-list__item">
+                Zmienne (let, const, var) / nazwy camelCase
+              </li>
+              <li class="notes-list__item">Obiekty</li>
+              <li class="notes-list__item">Funkcje</li>
+            </ul>
+            <p class="notes__paragraph">
+              linkowanie skryptu &lt;script src="main.js"&gt;&lt;/script&gt;
+            </p>
+            <p class="notes__paragraph">; - średnik oznacza linię skończoną</p>
+            <p class="notes__paragraph">
+              Zmienne: const - stałe połączenie z jedną wartością / let -
+              połączenie które można przepinać, ale zdefiniowane raz
+            </p>
+
+            <h4 class="notes__h4">Typy proste:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">
+                string - tekst / otaczamy ' lub "
+              </li>
+              <li class="notes-list__item">number - liczba</li>
+              <li class="notes-list__item">
+                bigint - duża liczba / większa niż 2^53
+              </li>
+              <li class="notes-list__item">boolean - true lub false</li>
+              <li class="notes-list__item">
+                null - wartość celowo niezidentyfikowana
+              </li>
+              <li class="notes-list__item">undefined - brak definicji</li>
+              <li class="notes-list__item">
+                *symbol - tworzy unikalne opakowanie
+              </li>
+            </ul>
+
+            <h4 class="notes__h4">Poznane funkcje:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">
+                alert('treść'); - komunikator na początku / okienko
+              </li>
+              <li class="notes-list__item">
+                console.log('treść'); - przy badaniu strony w odzielnym okienku
+                wyświetla się jako komunikat/wiadomość dla developerów
+              </li>
+              <li class="notes-list__item">
+                console.log(name); lub console.log(age); - funkcja ze zmienną /
+                zapis bez apostrofów
+              </li>
+              <li class="notes-list__item">
+                const name='Maciek'; - stała zmienna - przypisanie wartości
+                zmiennej / przy dłużej nazwie zmiennej należy użyć camelCase
+              </li>
+              <li class="notes-list__item">
+                const age=32; - stała zmienna - przypisanie wartości zmiennej /
+                przy dłużej nazwie zmiennej należy użyć camelCase
+              </li>
+              <li class="notes-list__item">
+                ` - backtick - specjalny ciąg znaków zwany literałem
+              </li>
+              <li class="notes-list__item">
+                console.log(`Nazywam się ${name} i mam ${age} lat`) - ${zmienna}
+                - w użyciu mieszanych ciągów znaków w backticku
+              </li>
+              <li class="notes-list__item">
+                typeof nazwaZmiennej - sprawdza jakiego typu jest zmienna
+              </li>
+              <li class="notes-list__item">
+                document.querySelector('.selector') - podpinanie się pod
+                elementy html / selektor taki sam jak w CSS / warto dodać w BEM
+                modyfikator js czyli np. .header__menu--js
+              </li>
+              <li class="notes-list__item">
+                function.calculate(myNumber) {return myNumber*7;} - funkcja w JS
+                - służy do wielokrotnego użycia w kodzie / przy braku wywoałania
+                opisze jako undefined / może zawierać kilka zmiennych
+              </li>
+              <li class="notes-list__item">
+                const calculate = (myNumber) => {myNumber = myNumber+3;
+                console.log(myNumber); return myNumber*7} - (Fat) arrow function
+                - wywołanie np. calculate(2); //35
+              </li>
+              <li class="notes-list__item">
+                const calculate = (myNumber) => (myNumber+3)*7; - (Fat) arrow
+                function - wywołanie np. calculate(2); //35
+              </li>
+              <li class="notes-list__item">
+                deathStar.name - wypisuje właściwość obiektu - kropka wywołuje
+                właściwość
+              </li>
+              <li class="notes-list__item">
+                import - importowanie między plikami <br />
+                import nazwaRzeczy from 'nazwa-modułu/ścieżka_do_pliku'<br />
+                import {pierwszy, drugi} from 'nazwa-modułu/ścieżka_do_pliku'<br />
+                import {bardzodługanazwa as pierwszy} from
+                'nazwa-modułu/ścieżka_do_pliku'<br />
+                import* as newName from ... - importowanie wszystkich elementów
+                z pliku .js<br />
+                export - eksport funkcji z jednego pliku js do innego<br />
+                export default - eksport z dowolną zmienną
+              </li>
+              <li class="notes-list__item">
+                document.documentElement.style.setProperty('--zmienna',
+                'wartość') - zmiana wartości zmiennej CSS
+              </li>
+            </ul>
+            <h4 class="notes__h4">Metoda porównania:</h4>
+            <p class="notes-list__paragraph">
+              if('JavaScript!='Java'){//wykonaj kod jeśli true}
+            </p>
+            <p class="notes-list__paragraph">
+              AND - wszystkie warunki muszą być true <br />
+              if((myVariable == 4) && (otherVar !== 'test')) {...}
+            </p>
+            <p class="notes-list__paragraph">
+              OR - przynajmniej jeden warunek musi być true <br />
+              if((myVariable == 4) || (otherVar !== 'test')) {...}
+            </p>
+            <p class="notes-list__paragraph">
+              NOT - odwraca wartość wyrażenia logicznego <br />
+              if(!('JavaScript'=='Java')) {//ten kod się wykona}
+            </p>
+            <p class="notes-list__paragraph">
+              ELSE <br />
+              if((myVariable == 4)) {//wykonaj kod jeśli true} <br />
+              else {//wykonaj kod jeśli false} <br />
+              lub np. else if(myVariable == 8) {//wykonaj kod jeśli
+              myVariable==8}
+            </p>
+            <p class="notes-list__paragraph">
+              switch (myVariable){case 4: console.log('hi 4');<br />
+              break;<br />
+              case 8: console.log('hi 8'); <br />
+              break;<br />
+              default: console.log ('default response');}
+            </p>
+            <p class="notes-list__paragraph">
+              ZAPIS SKRÓCONY <br />
+              (zmienna1>zmienna2)? console.log('true'):console.log('false')
+            </p>
+
+            <h4 class="notes__h4">Operatory porównania:</h4>
+            <ul class="notes-list">
+              <li class="notes-list__item">!= - nie równa się</li>
+              <li class="notes-list__item">&gt; - lewa większa od prawej</li>
+              <li class="notes-list__item">&lt; - prawa większa lewej</li>
+              <li class="notes-list__item">&gt;= , &lt;= - wiadomo :)</li>
+              <li class="notes-list__item">== - obie strony równe</li>
+              <li class="notes-list__item">
+                === - obie strony równe (sprawdza typeof)
+              </li>
+              <li class="notes-list__item">
+                !== - obie strony różne (sprawdza typeof)
+              </li>
+            </ul>
+
+            <h4 class="notes__h4">Eventy:</h4>
+            <p class="notes-list__paragraph">
+              element.addEventListener(type,listener[,options])<br />
+              np. const button = document.querySelector('.action--js'); <br />
+              button.addEventListener('click', nazwaFunkcji) <br />
+              button.addEventListener('click', (e)=>{...}) - e - event
+            </p>
+
+            <h4 class="notes__h4">Hamburger menu:</h4>
+            <p class="notes-list__paragraph">
+              element.classList.add-dodawanie/remove-usuwanie/toggle-przełączanie/contains-zwraca
+              true albo false - działanie na klasach elementu
+            </p>
+          </article>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <p class="footer__paragraph">
+        Notatki ze szkolenia WTF: Co ten frontend / edycja 2020
+      </p>
+    </footer>
+  </body>
+</html>
