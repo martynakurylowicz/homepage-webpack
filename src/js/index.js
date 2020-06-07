@@ -1,4 +1,5 @@
 import '../scss/main.scss';
+import moment from 'moment';
 
 /* place your code below */
 
@@ -24,4 +25,4 @@ hamburger.addEventListener('click', () => {
   nav.classList.toggle('navigation--open');
 });
 
-
+console.log(moment().format('MMMM Do YYYY, h:mm:ss a'));
