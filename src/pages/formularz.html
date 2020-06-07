@@ -6,14 +6,18 @@
     <title>Martyn</title>
   </head>
 
-  <body>
+  <body id="body" class="body-mode body-mode--light">
     <div class="page-navigation">
       <header class="header">
         <button
           class="navigation__hamburger-menu navigation__hamburger-menu--js"
           aria-label="Otwórz menu"
         >
-          <img class="hamburger-menu" src="../img/hamburger-menu.png" alt="menu" />
+          <img
+            class="hamburger-menu"
+            src="../img/hamburger-menu.png"
+            alt="menu"
+          />
         </button>
         <p class="hamburger-menu__button">NOTATNIK WTF</p>
         <nav class="navigation navigation--js">
@@ -29,9 +33,21 @@
     </div>
     <div class="page-background">
       <main>
+        <button
+          class="button--dark-mode"
+          type="button"
+          name="dark_light"
+          title="Toggle dark/light mode"
+        >
+          dark mode
+        </button>
         <section class="content">
           <h2 class="form__title">Formularz</h2>
-          <form class="form" method="post" action="https://dev.cotenfrontend.pl">
+          <form
+            class="form"
+            method="post"
+            action="https://dev.cotenfrontend.pl"
+          >
             <div class="form__box">
               <label for="firstName"> Imię:</label>
               <input
@@ -86,18 +102,18 @@
               <label for="avatar"> Wyślij avatar:</label>
               <input class="form__item" id="avatar" name="avatar" type="file" />
             </div>
-              <div class="form__box">
-                <label for="movie"> Wybierz ulubiony film:</label>
-                <select class="form__item" id="movie" name="movie">
-                  <option value="movie-1">Donnie Darko</option>
-                  <option value="movie-2"
-                    >A Girl Walks Home Alone at Night</option
-                  >
-                  <option value="movie-3"
-                    >Eternal Sunshine of the Spotless Mind</option
-                  >
-                </select>
-              </div>
+            <div class="form__box">
+              <label for="movie"> Wybierz ulubiony film:</label>
+              <select class="form__item" id="movie" name="movie">
+                <option value="movie-1">Donnie Darko</option>
+                <option value="movie-2"
+                  >A Girl Walks Home Alone at Night</option
+                >
+                <option value="movie-3"
+                  >Eternal Sunshine of the Spotless Mind</option
+                >
+              </select>
+            </div>
             <fieldset class="form__fieldset">
               <legend>Adres:</legend>
               <div class="form__box">
@@ -125,7 +141,8 @@
                   pattern="[0-9]{2}-[0-9]{3}"
                   placeholder="00-000"
                   id="postalCode"
-                  name="postalCode"/>
+                  name="postalCode"
+                />
               </div>
             </fieldset>
             <fieldset class="form__fieldset">
@@ -145,11 +162,9 @@
             </fieldset>
             <div class="form__box">
               <label for="yourStory"> Twoja wiadomość:</label>
-              <textarea
-                class="form__item"
-                id="yourStory"
-                name="yourStory"
-              >...</textarea>
+              <textarea class="form__item" id="yourStory" name="yourStory">
+...</textarea
+              >
             </div>
             <div class="form__box">
               <label>
@@ -158,10 +173,9 @@
               >
             </div>
             <div class="form__box">
-              <label>
-                <input type="submit" name="send" value="Wyślij" /></label>
-            </div>        
-           </form>
+              <label> <input type="submit" name="send" value="Wyślij" /></label>
+            </div>
+          </form>
         </section>
       </main>
     </div>

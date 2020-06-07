@@ -3,6 +3,39 @@
 @import "_variables";
 @import "modules/hello.scss";
 
+$dark-color: #000000;
+$light-color: #ffffff;
+
+.button--dark-mode {
+  width: 100px;
+  height: 25px;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  float: right;
+}
+
+.body-mode {
+  &--light {
+    background-color: $light-color;
+    color: $dark-color;
+    .button--dark-mode {
+      background-color: $dark-color;
+      color: $light-color;
+    }
+  }
+  &--dark {
+    background-color: $dark-color;
+    color: $light-color;
+    .button--dark-mode {
+      background-color: $light-color;
+      color: $dark-color;
+    }
+  }
+}
+
 .content {
   bottom: 0;
   padding: 20px;
@@ -247,7 +280,6 @@
 }
 
 .page-background {
-  background-color: #ffffff;
   max-width: 1200px;
   margin: auto;
   font-family: sans-serif;
