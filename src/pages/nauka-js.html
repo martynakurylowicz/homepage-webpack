@@ -13,7 +13,11 @@
           class="navigation__hamburger-menu navigation__hamburger-menu--js"
           aria-label="Otwórz menu"
         >
-          <img class="hamburger-menu" src="../img/hamburger-menu.png" alt="menu" />
+          <img
+            class="hamburger-menu"
+            src="../img/hamburger-menu.png"
+            alt="menu"
+          />
         </button>
         <p class="hamburger-menu__button">NOTATNIK WTF</p>
         <nav class="navigation navigation--js">
@@ -212,6 +216,58 @@
             <p class="notes-list__paragraph">
               element.classList.add-dodawanie/remove-usuwanie/toggle-przełączanie/contains-zwraca
               true albo false - działanie na klasach elementu
+            </p>
+
+            <h4 class="notes__h4">Tablica:</h4>
+            <p class="notes-list__paragraph">
+              const hardware = ['keyboard', 'mouse', 'screen'] <br />
+              const news=[{title: 'wtf', content: 'lorem ipsum'...}, {title:'co
+              ten frontend', content:'lorem ipsum', link:'https://...'}] <br />
+              elementy w kolejności - index od 0 <br />
+              tablica[index] - pobieranie elementu tablicy <br />
+              tablica.legth - ilość elementów - liczona od 1 <br />
+              tablica.push(element) - dodawanie elementów do tablicy <br />
+              tablica.unshift(element) - dodawanie elementu na początku <br />
+              tablica.shift() - usuwanie elementu z początku <br />
+              tablica.pop() - usuwanie elementu z końca <br />
+              tablica.indexOf(element) - sprawdzanie czy jest dany element w
+              tablicy i zwróci pozycję <br />
+              tablica.splice(index,liczbaElementów) - usuwanie n elementów od
+              danej pozycji <br />
+              tablica.slice(index, stop) - pobieranie n elementów od danej
+              pozycji
+            </p>
+
+            <h4 class="notes__h4">Pętle - loops:</h4>
+            <p class="notes-list__paragraph">
+              for (inicjalizacja; warunek stopu; wyrażenie inkrementacji){kod} -
+              podstawowa pętla<br />
+              i - liczba pętli <br />
+              for (let i=0;i&lt;;i++){console.log(`${i}wykonanie pętli`);}<br />
+              ++ - zwiększenie wartości o jeden / w kolejnym wywołaniu<br />
+              -- - zmniejszenie wartości o jeden / w kolejnym wywołaniu<br />
+              ++i - zwiększenie wartości o jeden / w aktualnym wywołaniu<br />
+              --i - zmniejszenie wartości o jeden / w aktualnym wywołaniu<br />
+              while (warunek logiczny) {kod} - pętla z prostym warunkiem <br />
+              do {kod} while (warunek logiczny) - pętla z zawsze wykonującym się
+              kodem na początku <br />
+              for (wlasnosc in obiekt) - wypisanie własności obiektu dzięki
+              pętli <br />
+              for (element of tablica) - wypisanie elementu z tablicy
+            </p>
+
+            <h4 class="notes__h4">Przechowywanie danych:</h4>
+            <p class="notes-list__paragraph">
+              document.cookie - podgląd danych zapisywanych w cookie <br />
+              document.cookie = "nazwa = wartość" - ustawienie ciastka <br />
+              localstorage - do ręcznego wyczyszczenia zachowuje dane <br />
+              sessionstorage - do zamknięcia okna zachowuje dane <br />
+              localStorage.setItem('nazwa'.wartosc) - obiekt do zachowywania
+              danych <br />
+              localStorage.getItem('nazwa') - pobieranie danych <br />
+              localStorage.removeItem('nazwa') - usuwanie danych <br />
+              JSON.stringify(obiekt) - obiekt <br />
+              JSON.parse(JSONString) - odkodowanie obiektu
             </p>
           </article>
         </section>
